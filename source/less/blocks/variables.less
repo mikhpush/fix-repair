@@ -1,0 +1,56 @@
+@mullerMed: "mullerMedium", "Muller", sans-serif;
+@mullerReg: "mullerRegular", "Muller", sans-serif;
+@orange: #f9572e;
+@light-orange: #ff7b59;
+@green-blue: #33b5a3;
+@gray: #666666;
+@gray-border: #cccccc;
+@gray-footer: #f2f2f2;
+@light-green-blue: #63d2c1;
+@desktop-mini: 1600px;
+
+.buttonStyle (@radius, @width, @height) {
+	width: @width;
+	height: @height;
+	border-radius: @radius;
+	border: none;
+	background-color: @orange;
+  box-shadow: 0 7px 15px 0 rgba(249, 87, 46, 0.6);
+  font-family: @mullerMed;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.13;
+  color: #ffffff;
+
+  &:hover {
+  	background-color: @light-orange;
+  	cursor: pointer;
+  }
+}
+
+.activeElement (@url, @width, @height, @float: none, @marginRight: 0px) {
+		&::before {
+	  display: block;
+	  float: @float;
+	  content: " ";
+	  background-image: url(@url);
+	  width: @width;
+	  height: @height;
+	  background-repeat: no-repeat;
+	  background-position: center;
+	  margin-right: @marginRight;
+  }
+
+	  &:hover {
+  	cursor: pointer;
+  }
+}
+
+.emphasizedDescription {
+	font-family: @mullerMed;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: @green-blue;
+}

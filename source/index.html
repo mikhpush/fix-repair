@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>заглушка</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <section class="welcome">
+      <div class="welcome__wrapper-text">
+        <img class="welcome__logo" src="img/logotype.svg" width="200" height="55" alt="fix логотип">
+        <h1 class="welcome__title">Ремонт квартир в типовых домах</h1>
+        <p class="welcome__description">Готовый дизайн-проект, работы и материалы за 3 месяца от 610 т.р.</p>
+        <button class="welcome__button">Узнайте о запуске первым</button>
+        <span class="welcome__note">Старт весной 2016</span>
+        <span class="welcome__scroll">Листайте вниз, чтобы ничего не упустить</span>
+      </div>
+      <div class="welcome__wrapper-pics">
+        <span href="#footer" class="welcome__contacts">Контакты</span>
+        <span class="welcome__play-button">
+          Смотреть видео
+        </span>
+        <img class="welcome__image" src="img/img.png"
+          srcset="img/img@2x.png 2x" srcset="img/img@3x.png 3x" alt="ремонт квартир">
+      </div>
+    </section>
+
+    <section class="advantages">
+      <h2 class="advantages__title">FIX Ремонт — это легко</h2>
+      <strong class="advantages__description description--emphasized"> Готовые проекты, проверенные материалы и умелые руки </strong>
+      <div class="advantages__wrapper">
+        <div class="advantages__item">
+          <h3 class="advantages__item-title">Опытная команда</h3>
+          <p class="advantages__item-description">Команда проектировщиков и строителей со
+            стажем работы более 6 лет
+          </p>
+        </div>
+
+        <div class="advantages__item">
+          <h3 class="advantages__item-title">Типовые дизайн-проекты</h3>
+          <p class="advantages__item-description">Три стиля чистовой отделки «под ключ» и
+            спектр дополнительных услуг</p>
+        </div>
+
+        <div class="advantages__item">
+          <h3 class="advantages__item-title">Фиксированная смета</h3>
+          <p class="advantages__item-description">Никаких дополнительных расходов во
+            время ремонта. Расчет стоимости при заключении договора</p>
+        </div>
+
+        <div class="advantages__item advantages__item--emphasized">
+          <h3 class="advantages__item-title">Срок работ</h3>
+          <span class="advantages__item-timeline">3 месяца</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="slider">
+      <h2 class="slider__title">3 стиля интерьера</h2>
+      <strong class="slider__description">Скандинавский, классический и эко-стиль</strong>
+      <div class="slider__wrapper">
+        <div class="slider__left"></div>
+        <div class="slider__left-col"></div>
+        <div class="slider__center"></div>
+        <div class="slider__right-col">
+          <p class="slider__comments">Кафельная плитка в ванной комнате в скандинавском стиле</p>
+          <div class="slider__btn-wrapper">
+            <img class="slider__left-btn" src="img/slides/right.svg">
+            <img class="slider__right-btn" src="img/slides/right.svg">
+          </div>
+        </div>
+        <div class="slider__right"></div>
+      </div>
+    </section>
+
+    <section class="form">
+      <fieldset class="form__wrapper">
+        <legend class="form__legend">
+          <h2 class="form__title">Узнайте о запуске сервиса первым</h2>
+        </legend>
+        <span class="form__promo">Первым 10 клиентам стальная  входная дверь в подарок</span>
+        <form class="form__form-container" action="" method="post">
+          <div class="form__inner-wrapper">
+            <input class="form__name form__field" type="text" name="name" required id="name-id" placeholder="Имя и Фамилия*">
+            <input id="email" class="form__email form__field" type="email" name="mail" id="mail-id" placeholder="E-mail адрес*" required autofill="off">
+            <label for="email" class="form__email-label">E-mail адрес*</label>
+            <input class="form__tel form__field" type="tel" name="tel" id="tel-id" placeholder="Телефон">
+            <input class="form__submit" type="submit" value="Подписаться">
+          </div>
+        </form>
+        <aside class="form__notes-wrapper">
+          <span class="form__notes">* Обязательные для заполнения поля </span>
+          <a class="form__policy-link" href="">Политика конфиденциальности</a>
+        </aside>
+      </fieldset>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer">
+    <aside class="footer__social-wrapper">
+      <a class="footer__fb-link" href="">
+        <div class="footer__fb-box"></div>
+      </a>
+      <a class="footer__vk-link" href="">
+        <div class="footer__vk-box"></div>
+      </a>
+      <a class="footer__inst-link" href="">
+        <div class="footer__inst-box"></div>
+      </a>
+    </aside>
+    <span class="footer__title">Следите за нашим развитием</span>
+    <p class="footer__text">Подпишитесь на наши аккаунты в соц. сетях, знакомьтесь с нашими проектами и тем, что нас вдохновляет</p>
+    <address class="footer__contacts">
+      <a href="tel:88129035445" class="footer__tel">+7 (812) 903-54-45</a>
+      <div class="footer__address">
+        <span class="footer__address-street">Ул. Галерная, д 55,</span>
+        <span class="footer__address-city">Санкт-Петербург</span>
+      </div>
+      <a href="mailto:someone@example.com" class="footer__email">9035445@gmail.com </a>
+    </address>
+    <aside class="footer__copyright">
+      © FIX Ремонт, 2016
+    </aside>
+  </footer>
+
+  <script src="js/slider.js"></script>
+  <script src="js/events.js"></script>
+
+</body>
+</html>

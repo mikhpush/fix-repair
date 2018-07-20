@@ -1,0 +1,130 @@
+
+.form__wrapper-success,
+.form__wrapper {
+	width: 980px;
+	height: 640px;
+	margin: 160px auto 134px auto;
+	padding-bottom: 59px;
+	border: 4px solid @light-green-blue;
+}
+
+.form__legend {
+	padding: 20px;
+	text-align: center;
+}
+
+.form__promo {
+	display: block;
+	margin: auto;
+	width: 380px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+
+  &::before {
+  	display: block;
+	  float: left;
+	  content: " ";
+	  background-image: url("../../img/door-icon.svg");
+	  height: 69px;
+	  width: 46px;
+	  background-repeat: no-repeat;
+	  background-position: center;
+	  margin-right: 17px;
+	  margin-top: -10px;
+  }
+}
+
+.form__inner-wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 500px;
+	margin: 40px auto 0 auto;
+}
+
+.form__field {
+	font-size: 18px;
+	height: 60px;
+	margin-bottom: 30px;
+	padding-left: 24px;
+	color: @gray;
+	border-color: @gray-border;
+	border-radius: 4px;
+	border-style: solid;
+}
+
+.form__email-label {
+	display: none;
+}
+
+.form__email {
+	&:focus {
+		outline: none;
+		border-color: @orange
+	}
+
+	&:focus + label {
+		display: block;
+		position: absolute;
+		margin-top: 83px;
+		margin-left: 20px;
+		padding: 5px;
+		background-color: white;
+		color: @orange;
+	}
+
+	&:focus:valid {
+		border-color: @gray-border
+	}
+
+	&:focus:valid + label {
+		color: @gray-border;
+	}
+}
+
+.form__submit {
+	align-self: center;
+	margin-top: 18px;
+	.buttonStyle(25px, 250px, 50px);
+}
+
+.form__notes-wrapper {
+	margin: 22px auto 59px auto;
+	width: 500px;
+	text-align: center;
+}
+
+.form__notes {
+	display: block;
+  font-size: 13px;
+  line-height: 1.54;
+  color: @gray;
+}
+
+.form__policy-link {
+	font-size: 13px;
+  line-height: 1.54;
+	color: @orange;
+	text-decoration: none;
+}
+
+// onSubmit feedbsck window
+
+.form__success {
+	display: flex;
+	height: 540px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.form__success-text {
+	margin-top: 35px;
+  width: 276px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.6px;
+  text-align: center;
+  text-transform: uppercase;
+}
